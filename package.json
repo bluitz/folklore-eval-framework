@@ -1,0 +1,22 @@
+{
+  "name": "folklore-eval-framework",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Folklore-inspired LLM morality evaluation framework with global + local variants, MCQ/open-ended, keyword/LLM-judge scoring, and a self-evaluation rubric.",
+  "engines": {
+    "node": ">=18.18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "eval": "node src/index.js run",
+    "rubric": "node src/index.js rubric",
+    "smoke": "node src/index.js smoke"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "openai": "^4.57.0",
+    "yargs": "^17.7.2"
+  }
+}
